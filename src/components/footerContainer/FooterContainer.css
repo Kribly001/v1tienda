@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap');
+
+footer{
+   position:fixed;
+   bottom:0px;
+   height:50px;
+   width:100%;
+   background:black;
+}
+
+footer p{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    font-family:'Assistant', sans-serif;;
+}
