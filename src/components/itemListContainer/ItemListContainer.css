@@ -7,5 +7,11 @@ font-family:'Righteous', cursive;
 }
 
 .saludo{
-    margin-top: 20%;
+    margin-top: 10%;
+}
+
+@media only screen and (max-width: 768px) {
+    .saludo{
+        margin-top: 40%;
+    }
 }
