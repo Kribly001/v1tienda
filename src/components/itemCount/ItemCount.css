@@ -1,0 +1,22 @@
+.box-count{
+    display: flex;
+    margin-left: 1px;
+}
+
+.box-count-children{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2px;
+}
+
+.box-count-children p {
+    margin-left: 2px;
+    margin-right: 2px;
+    font-weight: bold;
+}
+
+.boton-style{
+    padding: 5px 10px; 
+    font-size: 8px; 
+}

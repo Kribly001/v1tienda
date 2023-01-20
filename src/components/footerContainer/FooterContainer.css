@@ -1,16 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap');
 
-footer{
-   position:fixed;
-   bottom:0px;
-   height:50px;
-   width:100%;
-   background:black;
+footer {
+    position: absolute;
+    bottom: -270%;
+    width: 100%;
+    height: 50px;
+    background: black;
 }
 
-footer p{
+footer p {
     color: white;
     font-size: 15px;
     text-align: center;
-    font-family:'Assistant', sans-serif;;
+    font-family: 'Assistant', sans-serif;
+    ;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    footer {
+        position: absolute;
+        bottom: -590%;
+        width: 100%;
+        height: 50px;
+        background: black;
+    }
+   
 }

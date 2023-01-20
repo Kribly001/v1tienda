@@ -23,6 +23,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <NavBar/>
+    <br></br>
     <ItemListContainer greeting="Hola! Bienvenido a Volcom nuestra tienda🛍️"/>
   </React.StrictMode>
 );

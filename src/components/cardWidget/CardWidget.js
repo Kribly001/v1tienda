@@ -5,6 +5,7 @@
 //Modulos
 //Estilos
 import './CardWidget.css'
+import Button from 'react-bootstrap/Button';
 //Componentes
 //Core
 
@@ -14,8 +15,7 @@ import './CardWidget.css'
 const CardWidget = (props) => { //Funcion contructora
     return (
         <header>
-            <button type="button" className='btn btn-light'><i className='iconEdit bi bi-cart-plus'></i> {props.cantidad}</button>
-            <p>Ver carrito</p>
+            <Button variant="light"><i className='iconEdit bi bi-cart-plus'></i> {props.cantidad} <p>Ver Carrito</p></Button>{' '}
         </header>
     )
 }
