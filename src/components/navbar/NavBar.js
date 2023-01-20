@@ -3,6 +3,7 @@
 #########################################*/
 
 //Modulos
+import { Link } from 'react-router-dom';
 //Estilos
 import './NavBar.css'
 import Container from 'react-bootstrap/Container';
@@ -46,10 +47,9 @@ const NavBar = (props) => { //Funcion contructora
                   </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                  <Nav className="justify-content-end flex-grow-1 pe-3">
-                    <Nav.Link href="#action1">Sobre nosotros</Nav.Link>
-                    <Nav.Link href="#action2">Contactanos</Nav.Link>
-                  </Nav>
+                <Nav.Link><Link className="my-link" to="/">Inicio</Link></Nav.Link>
+                  <Nav.Link><Link className="my-link" to="/nosotros">Sobre nosotros</Link></Nav.Link>
+                  <Nav.Link><Link className="my-link" to="/contacto">Contactanos</Link></Nav.Link>
                 </Offcanvas.Body>
               </Navbar.Offcanvas>
             </Container>

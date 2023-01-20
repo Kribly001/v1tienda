@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 .logo{
     height: 80px;
@@ -6,4 +7,14 @@
 
 a{
     text-decoration: none;
+}
+
+.my-link {
+    color: black; /* o cualquier otro color */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-right: 1px solid gray; /* o cualquier otro color */
+    padding-right: 10px;
+    font-family: 'Righteous', cursive;
 }

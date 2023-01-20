@@ -3,12 +3,14 @@
 #########################################*/
 
 //Modulos
+import { useState } from 'react'
+// import { useEffect } from 'react';
+// import { useParams } from 'react-router-dom';
 //Estilos
 import Carousel from 'react-bootstrap/Carousel';
 import './ItemListContainer.css'
-import { useState } from 'react'
+
 //Componentes
-import FooterContainer from '../footerContainer/FooterContainer'
 import ItemList from '../itemList/ItemList'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
@@ -20,6 +22,14 @@ import Form from 'react-bootstrap/Form';
                 Logica
 #########################################*/
 const ItemListContainer = (props) => { //Funcion contructora
+
+  // const {productoId} = useParams();
+  // useEffect(()=>{
+  //   console.log(productoId + "  Renderizado")
+  //   return () => {
+  //     console.log(productoId + `${productoId} Fin Renderizado`)
+  //   }
+  // },[productId])
 
   const [categoryName, setCategoryName] = useState("")
 
@@ -80,13 +90,13 @@ const ItemListContainer = (props) => { //Funcion contructora
             <Button variant="outline-success">Search</Button>
           </Form>
           <div className='buttons-Search'>
+            <p>Que categoria deseas ver hoy?</p>
           <Button variant="light" onClick={cambiarCategoriaTodo}>Todo</Button>
           <Button variant="light" onClick={cambiarCategoriaRemeras}>Remeras</Button>
           <Button variant="light" onClick={cambiarCategoriaPantalones}>Pantalones</Button>
           <Button variant="light" onClick={cambiarCategoriaZapatillas}>Zapatillas</Button>
           </div>
       <ItemList category={categoryName}/>
-      <FooterContainer />
     </main>
   )
 }

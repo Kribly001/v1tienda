@@ -7,6 +7,7 @@
 import './Item.css'
 //Componentes
 import ItemCount from '../itemCount/ItemCount'
+import { Link } from 'react-router-dom'
 //Core
 
 
@@ -16,7 +17,7 @@ import ItemCount from '../itemCount/ItemCount'
 const Item = (props) => { //Funcion contructora
 
     
-const {brand, name, description, price, category}=props.data
+const {brand, name, description, price, category, id}=props.data
     return (
         <div className="orden-Card">
             <div className="card">
@@ -36,6 +37,7 @@ const {brand, name, description, price, category}=props.data
                         </svg>
                     </div>
                 </div>
+                <Link to={`/producto/${id}`}>Ver Detalles del Producto</Link>
             </div>
         </div>
     )

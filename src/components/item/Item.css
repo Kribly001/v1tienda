@@ -1,6 +1,6 @@
 /* comienzo Card */
 .card {
-    width: 250px;
+    width: 230px;
     height: 304px;
     padding: .8em;
     background: #f5f5f5;
@@ -68,7 +68,7 @@ svg {
 .orden-Card{
     justify-content: center;
     align-items: center;
-    margin-left: 40px;
+    margin-left: 80px;
 }
 
 /*Hover*/
@@ -80,4 +80,14 @@ svg {
 .card-button:hover {
     border: 1px solid #ffcaa6;
     background-color: #ffcaa6;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .orden-Card{
+        justify-content: center;
+        align-items: center;
+        margin-left: 60px;
+    }
+   
 }
