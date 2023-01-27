@@ -13,9 +13,11 @@ import './FooterContainer.css'
 #########################################*/
 const FooterContainer = (props) => { //Funcion contructora
     return (
+        <main>
        <footer>
         <p>© Maximiliano.Centeno | 2023</p>
        </footer>
+       </main>
     )
 }
 /*#######################################

@@ -16,7 +16,7 @@ import './ItemDetail.css'
 const ItemDetail = () => { //Funcion contructora
 
     return (
-        <article >
+        <article className='itemDetail-producto'>
 
         </article>
     )

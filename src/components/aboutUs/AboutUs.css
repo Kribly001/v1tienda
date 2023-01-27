@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+
+.margin-Top_about {
+    margin-top: 120px;
+}
+
+.margin-Top_about p {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.margin-Top_about .font-title {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 50px;
+    text-align: center;
+}

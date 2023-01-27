@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+main{
+    min-height: 100vh;
+    height: 100vh;
+}
+
+.margin_Top-Contact{
+    margin-top: 150px;
+}
+
+.image-Size{
+    width: 400px;
+    height: 350px;
+}
+
+.dato-Contact{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+}
+

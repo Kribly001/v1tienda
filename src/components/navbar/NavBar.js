@@ -47,9 +47,10 @@ const NavBar = (props) => { //Funcion contructora
                   </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                <Nav.Link><Link className="my-link" to="/">Inicio</Link></Nav.Link>
-                  <Nav.Link><Link className="my-link" to="/nosotros">Sobre nosotros</Link></Nav.Link>
-                  <Nav.Link><Link className="my-link" to="/contacto">Contactanos</Link></Nav.Link>
+                <Nav><Link className="my-link" to="/">Home</Link></Nav>
+                <Nav><Link className="my-link" to="/productos">Productos</Link></Nav>
+                  <Nav><Link className="my-link" to="/nosotros">Sobre nosotros</Link></Nav>
+                  <Nav><Link className="my-link" to="/contacto">Contactanos</Link></Nav>
                 </Offcanvas.Body>
               </Navbar.Offcanvas>
             </Container>

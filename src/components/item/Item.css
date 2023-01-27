@@ -1,7 +1,7 @@
 /* comienzo Card */
 .card {
     width: 230px;
-    height: 304px;
+    height: 320px;
     padding: .8em;
     background: #f5f5f5;
     overflow: visible;
@@ -17,8 +17,8 @@
 }
 
 .card-img {
-    height: 100px;
-    width: 90px;
+    height: 95px;
+    width: 88px;
     margin-left: auto;
     margin-right: auto;
     border-radius: .5rem;
@@ -39,7 +39,7 @@ svg {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 2px;
     border-top: 1px solid #ddd;
 }
 
@@ -71,9 +71,18 @@ svg {
     margin-left: 80px;
 }
 
+.detalles-Product a{
+    text-decoration: none;
+    color: black;
+}
+
+.detalles-Product a:hover{
+    background-color: aqua;
+}
+
 /*Hover*/
 .card-img:hover {
-    transform: translateY(-25%);
+    transform: translateY(-25%) scale(1.6);;
     box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
 }
 

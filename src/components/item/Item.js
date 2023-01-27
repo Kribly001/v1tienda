@@ -17,11 +17,11 @@ import { Link } from 'react-router-dom'
 const Item = (props) => { //Funcion contructora
 
     
-const {brand, name, description, price, category, id}=props.data
+const {brand, name, description, price, category, id, image}=props.data
     return (
         <div className="orden-Card">
             <div className="card">
-                <div className="card-img"><img src='' alt={category}></img></div>
+                <img className="card-img" src={image} alt={category}></img>
                 <div className="card-info">
                     <p className="text-title">{brand} -- {name}</p>
                     <p className="text-body">{description}</p>
@@ -37,7 +37,9 @@ const {brand, name, description, price, category, id}=props.data
                         </svg>
                     </div>
                 </div>
-                <Link to={`/producto/${id}`}>Ver Detalles del Producto</Link>
+                <div className='detalles-Product'>
+                <Link to={`/productos/${id}`}>Ver Detalles del Producto</Link>
+                </div>
             </div>
         </div>
     )

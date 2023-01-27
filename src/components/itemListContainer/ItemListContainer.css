@@ -2,12 +2,13 @@
 
 .saludo p {
     text-align: center;
-    font-size: 16px;
+    font-size: 40px;
     font-family: 'Righteous', cursive;
+    text-shadow: 7px 4px 7px #000000;
 }
 
 .size-Image {
-    height: 420px;
+    height: 470px;
 }
 
 .saludo {

@@ -15,6 +15,7 @@ import NavBar from './components/navbar/NavBar.js';
 import ItemListContainer from './components/itemListContainer/ItemListContainer.js';
 import FooterContainer from './components/footerContainer/FooterContainer';
 import ItemDetailContainer from './components/itemDetailContainer/ItemDetailContainer'
+import Home from './components/home/Home'
 // import Home from './components/home/Home';
 import AboutUs from './components/aboutUs/AboutUs';
 
@@ -34,7 +35,8 @@ root.render(
       <br></br>
       <Routes>
         {/* <Route exact path='/*' element={<ItemListContainer greeting="Hola Bienvenido a Volcom👕"/>}/> */}
-        <Route exact path='/' element={<ItemListContainer greeting="Hola Bienvenido a Volcom👕" />}/>
+        <Route exact path='/' element={<Home greeting="Hola! Bienvenido a Volcom🛍️"/>}/>
+        <Route exact path='/productos' element={<ItemListContainer/>}/>
         <Route exact path='/productos/:productoId' element={<ItemDetailContainer/>}/>
         <Route exact path='/nosotros' element={<AboutUs/>}/>
         <Route exact path='/contacto' element={<Contact/>}/>

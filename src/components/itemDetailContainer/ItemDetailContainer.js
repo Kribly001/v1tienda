@@ -3,12 +3,12 @@
 #########################################*/
 
 //Modulos
-// import { useEffect } from 'react'
-// import { useParams } from 'react-router-dom'
+import { useEffect } from 'react'
+import { useParams } from 'react-router-dom'
 //Estilos
 import './ItemDetailContainer.css'
 //Componentes
-// import ItemDetail from '../itemDetail/ItemDetail'
+import ItemDetail from '../itemDetail/ItemDetail'
 //Core
 
 
@@ -16,9 +16,18 @@ import './ItemDetailContainer.css'
                 Logica
 #########################################*/
 const ItemDetailContainer = () => { //Funcion contructora
+
+  const { productoId } = useParams()
+
+  useEffect(() => {
+    console.log(`Inicio producto con Id ${productoId}`);
+    return () => {
+      console.log(`Finalizo renderizado del producto con id ${productoId}}`);
+    }
+  }, [productoId])
   return (
-    <section>
-     
+    <section className='itemDetail-box'>
+      <ItemDetail />
     </section>
   )
 }

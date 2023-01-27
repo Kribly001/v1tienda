@@ -44,9 +44,9 @@ const ItemCount = (props) => { //Funcion contructora
         <>
             <div className='box-count'>
                 <div className='box-count-children'>
-                    <Button className='boton-style' onClick={addOne} as="input" type="button" value="+" />
+                    <Button className='boton-style' variant='dark' onClick={disOne} as="input" type="button" value="--" />
                     <p>{count}</p>
-                    <Button className='boton-style' onClick={disOne} as="input" type="button" value="--" />
+                    <Button className='boton-style' variant='dark' onClick={addOne} as="input" type="button" value="+" />
                 </div>
             </div>
 
