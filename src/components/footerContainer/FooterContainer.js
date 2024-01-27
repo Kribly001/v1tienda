@@ -15,7 +15,7 @@ const FooterContainer = (props) => { //Funcion contructora
     return (
         <main>
        <footer>
-        <p>© Maximiliano.Centeno | 2024</p>
+        <p>© Maxi.C | 2024</p>
        </footer>
        </main>
     )
