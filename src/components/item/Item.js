@@ -1,17 +1,7 @@
-/*#######################################
-              Importaciones
-#########################################*/
-
-//Dependencias
 import React from "react";
-//Estilos
 import './Item.css';
 
-/*#######################################
-                Logica
-#########################################*/
-const Item = ({ data }) => { //Funcion contructora
-
+const Item = ({ data }) => {
   const { brand, name, description, price, category, image } = data;
 
   return (
@@ -19,22 +9,23 @@ const Item = ({ data }) => { //Funcion contructora
       <div className="card">
         <img
           className="card-img"
-          src={image || "https://via.placeholder.com/150"} // Imagen por defecto si no hay imagen
+          src={image || "https://via.placeholder.com/150"}
           alt={category || "Producto"}
         />
         <div className="card-info">
-          <p className="text-title">{brand || "Marca desconocida"} -- {name || "Producto sin nombre"}</p>
+          <p className="text-title">{brand || "Marca desconocida"} — {name || "Producto sin nombre"}</p>
           <p className="text-body">{description || "Sin descripción disponible"}</p>
         </div>
         <div className="card-footer">
           <span className="text-title">${price || "0.00"}</span>
+          <button className="btn-vermas">Ver más</button>
+        </div>
+        <div className="btn-container">
+          <button className="btn-agregar">🛒 Agregar al carrito</button>
         </div>
       </div>
     </div>
   );
 };
 
-/*#######################################
-              Exportaciones
-#########################################*/
 export default Item;
