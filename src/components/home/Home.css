@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 .carrousel-image {
     width: 230px;
@@ -12,8 +12,17 @@
     margin-left: 70px;
 }
 
-.button-Product{
+.carrousel-image img {
+    width: 150px;
+    height: 90px;
+    display: flex;
+    position: relative;
+    box-shadow: inset 5px 5px 0px 0px #ffa500;
+}
+
+.button-Product {
     text-align: center;
+    margin: 20px auto; /* Espaciado alrededor */
 }
 
 .images-Home {
@@ -26,15 +35,42 @@
 }
 
 .description-Sitio {
-    margin-right: 40px;
-    margin-left: 40px;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif; /* Cambia la fuente */
+    font-weight: 400; /* Peso normal */
+    font-size: 18px; /* Tamaño más pequeño */
+    line-height: 1.6; /* Mejora la legibilidad */
+    text-align: justify; /* Justifica el texto */
 }
 
 .adjust-Image{
     width: 100%;
+}
+
+.size-Image {
+    width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+    height: auto; /* Mantén la proporción de la imagen */
+    object-fit: cover; /* Ajusta cómo se recorta la imagen */
+    max-height: 500px; /* Limita la altura máxima para evitar que se alargue demasiado */
+}
+
+.button-Product Button {
+    background-color: #007bff; /* Azul brillante */
+    color: white; /* Texto blanco */
+    border: none; /* Sin bordes */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 18px; /* Tamaño de fuente */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: all 0.3s ease; /* Animación suave */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.button-Product Button:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+    color: white; /* Asegura que el texto sea visible */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
 }
 
 @media only screen and (max-width: 768px) {
@@ -43,5 +79,21 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    .button-Product Button {
+        width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+        font-size: 16px; /* Ajusta el tamaño de la fuente */
+    }
+
+  .carrousel-image {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .description-Sitio {
+    font-size: 16px;
+    margin: 20px;
+  }
    
 }
+

@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 .saludo p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
     text-align: center;
-    font-size: 40px;
-    font-family: 'Righteous', cursive;
-    text-shadow: 7px 4px 7px #000000;
-}
+    color: #333;
+  }
 
 .size-Image {
     height: 470px;

@@ -35,11 +35,11 @@ root.render(
       <br></br>
       <Routes>
         {/* <Route exact path='/*' element={<ItemListContainer greeting="Hola Bienvenido a Volcom👕"/>}/> */}
-        <Route exact path='/' element={<Home greeting="Hola! Bienvenido a Volcom🛍️"/>}/>
-        <Route exact path='/productos' element={<ItemListContainer/>}/>
-        <Route exact path='/productos/:productoId' element={<ItemDetailContainer/>}/>
-        <Route exact path='/nosotros' element={<AboutUs/>}/>
-        <Route exact path='/contacto' element={<Contact/>}/>
+        <Route exact path='/' element={<Home greeting="Bienvenido a Techteno🛍️" />} />
+        <Route exact path='/productos' element={<ItemListContainer />} />
+        <Route exact path='/productos/:productoId' element={<ItemDetailContainer />} />
+        <Route exact path='/nosotros' element={<AboutUs />} />
+        <Route exact path='/contacto' element={<Contact />} />
         {/* <ItemListContainer greeting="Hola! Bienvenido a Volcom nuestra tienda🛍️" /> */}
       </Routes>
       <FooterContainer />

@@ -18,6 +18,13 @@ import Button from 'react-bootstrap/Button';
 #########################################*/
 const Home = (props) => { //Funcion contructora
 
+  const brandImages = [
+    "/images/marca1-home.png",
+    "/images/marca2-home.png",
+    "/images/marca3-home.png",
+    "/images/marca4-home.png",
+  ];
+
   return (
     <main>
       <br></br><br></br><br></br>
@@ -51,28 +58,22 @@ const Home = (props) => { //Funcion contructora
       </div>
       <br></br><br></br><br></br><br></br>
       <div>
-        <div className='carrousel-image'>
-          <img className='images-Home' src="/images/marca1-home.png" alt="Imagen 1"/>
-        </div>
-        <div className='carrousel-image'>
-          <img className='images-Home' src="/images/marca2-home.png" alt="Imagen 2"/>
-        </div>
-        <div className='carrousel-image'>
-          <img className='images-Home' src="/images/marca3-home.png" alt="Imagen 3"/>
-        </div>
-        <div className='carrousel-image'>
-          <img className='images-Home' src="/images/marca4-home.png" alt="Imagen 3"/>
-        </div>
+        {brandImages.map((src, index) => (
+          <div className="carrousel-image" key={index}>
+            <img className="images-Home" src={src} alt={`Imagen ${index + 1}`} />
+          </div>
+        ))}
       </div>
       <br></br><br></br><br></br>
       <div className='description-Sitio'>
-        <p>Bienvenido a Volcom, una tienda de ropa en línea con más de 10 años de experiencia en la industria. Ofrecemos una amplia variedad de ropa para hombres, mujeres y niños, desde prendas básicas hasta piezas de moda más elaboradas. Nuestra selección incluye ropa de alta calidad de las mejores marcas, diseñada para durar y adaptarse a todos los estilos. Ofrecemos un servicio de atención al cliente excepcional y envíos rápidos para asegurarnos
-           de que obtengas tus compras lo antes posible. ¡Gracias por elegir Volcom para tus compras de ropa!</p>
+        <p>Bienvenido a Techteno, tu tienda en línea especializada en tecnología. Con más de 5 años de experiencia, ofrecemos una amplia gama de productos tecnológicos de última generación, desde auriculares y smartwatch hasta accesorios y gadgets innovadores. Trabajamos con las mejores marcas del mercado para garantizar calidad y rendimiento en cada producto. Nuestro compromiso es brindarte un servicio excepcional, envíos rápidos y asesoramiento personalizado para que encuentres justo lo que necesitas. ¡Gracias por elegir Techteno como tu aliado en tecnología!</p>
       </div>
       <br></br><br></br>
       <div className="mb-2 button-Product">
         <Button variant="primary" size="lg">
-        <Link className="my-link" to="/productos">Ver Productos</Link>
+          <Link className="my-link" to="/productos">
+            <i className="bi bi-cart"></i> Ver Productos
+          </Link>
         </Button>
       </div>
       <img className='adjust-Image' src='/images/ventas-Articulo.png' alt='pagos'></img>

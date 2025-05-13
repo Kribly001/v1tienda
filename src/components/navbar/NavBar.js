@@ -3,6 +3,7 @@
 #########################################*/
 
 //Modulos
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 //Estilos
 import './NavBar.css'
@@ -27,39 +28,65 @@ import 'bootstrap/dist/css/bootstrap.min.css';
           </button>
 #########################################*/
 const NavBar = (props) => { //Funcion contructora
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <header>
-      <>
-        {[false].map((expand) => (
-          <Navbar key={expand} bg="light" expand={expand} className="mb-3 fixed-top">
-            <Container fluid>
-              <Navbar.Brand><img src="/images/logoWeb.png" alt="logo" className='logo' /></Navbar.Brand>
-              <a href="#action"><CardWidget cantidad="10"></CardWidget></a>
-              <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
-              <Navbar.Offcanvas
-                id={`offcanvasNavbar-expand-${expand}`}
-                aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-                placement="end"
-              >
-                <Offcanvas.Header closeButton>
-                  <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                    Volcom-Tu tienda de confianza👕
-                  </Offcanvas.Title>
-                </Offcanvas.Header>
-                <Offcanvas.Body>
-                <Nav><Link className="my-link" to="/">Home</Link></Nav>
-                <Nav><Link className="my-link" to="/productos">Productos</Link></Nav>
-                  <Nav><Link className="my-link" to="/nosotros">Sobre nosotros</Link></Nav>
-                  <Nav><Link className="my-link" to="/contacto">Contactanos</Link></Nav>
-                </Offcanvas.Body>
-              </Navbar.Offcanvas>
-            </Container>
-          </Navbar>
-        ))}
-      </>
+      <Navbar bg="light" expand={false} className="mb-3 fixed-top">
+        <Container fluid>
+          <Navbar.Brand>
+            <Link to="/" onClick={handleClose}>
+              <img src="/images/logoWeb.png" alt="logo" className="logo" />
+            </Link>
+          </Navbar.Brand>
+          <a href="#action">
+            <CardWidget cantidad="10"></CardWidget>
+          </a>
+          <Navbar.Toggle aria-controls="offcanvasNavbar" onClick={handleShow} />
+          <Navbar.Offcanvas
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+            placement="end"
+            show={show}
+            onHide={handleClose}
+          >
+            <Offcanvas.Header closeButton>
+              <Offcanvas.Title id="offcanvasNavbarLabel">
+                Tu tienda de confianza
+              </Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body>
+              <Nav>
+                <Link className="my-link" to="/" onClick={handleClose}>
+                  Home
+                </Link>
+              </Nav>
+              <Nav>
+                <Link className="my-link" to="/productos" onClick={handleClose}>
+                  Productos
+                </Link>
+              </Nav>
+              <Nav>
+                <Link className="my-link" to="/nosotros" onClick={handleClose}>
+                  Sobre nosotros
+                </Link>
+              </Nav>
+              <Nav>
+                <Link className="my-link" to="/contacto" onClick={handleClose}>
+                  Contactanos
+                </Link>
+              </Nav>
+            </Offcanvas.Body>
+          </Navbar.Offcanvas>
+        </Container>
+      </Navbar>
     </header>
-  )
-}
+  );
+};
+
 /*#######################################
               Exportaciones
 #########################################*/
