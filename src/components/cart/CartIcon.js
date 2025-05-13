@@ -1,20 +1,7 @@
-/*#######################################
-              Importaciones
-#########################################*/
-
-//Modulos
 import React from "react";
 import { useCart } from "../../context/CartContext";
-//Estilos
-import './CardWidget.css'
-import Button from 'react-bootstrap/Button';
-//Componentes
-//Core
 
-/*#######################################
-                Logica
-#########################################*/
-const CardWidget = () => {
+const CartIcon = () => {
   const { cart } = useCart();
 
   // Calcular la cantidad total de productos en el carrito
@@ -50,7 +37,4 @@ const CardWidget = () => {
   );
 };
 
-/*#######################################
-              Exportaciones
-#########################################*/
-export default CardWidget;
+export default CartIcon;

@@ -18,10 +18,13 @@ import ItemDetailContainer from './components/itemDetailContainer/ItemDetailCont
 import Home from './components/home/Home'
 // import Home from './components/home/Home';
 import AboutUs from './components/aboutUs/AboutUs';
+import { CartProvider } from "./context/CartContext"; // Importa el CartProvider
 
 //Core
 import reportWebVitals from './reportWebVitals';
 import Contact from './components/contact/Contact';
+import Cart from "./components/cart/Cart"; // Componente para mostrar el carrito
+
 
 /*#######################################
                 Logica
@@ -29,7 +32,7 @@ import Contact from './components/contact/Contact';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-
+ <CartProvider>
     <BrowserRouter>
       <NavBar />
       <br></br>
@@ -40,10 +43,13 @@ root.render(
         <Route exact path='/productos/:productoId' element={<ItemDetailContainer />} />
         <Route exact path='/nosotros' element={<AboutUs />} />
         <Route exact path='/contacto' element={<Contact />} />
+        <Route path="/carrito" element={<Cart />} /> {/* Ruta para el carrito */}
+        
         {/* <ItemListContainer greeting="Hola! Bienvenido a Volcom nuestra tienda🛍️" /> */}
       </Routes>
       <FooterContainer />
     </BrowserRouter>
+    </CartProvider>
   </React.StrictMode>
 );
 

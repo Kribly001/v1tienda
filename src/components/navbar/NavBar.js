@@ -42,9 +42,10 @@ const NavBar = (props) => { //Funcion contructora
               <img src="/images/logoWeb.png" alt="logo" className="logo" />
             </Link>
           </Navbar.Brand>
-          <a href="#action">
-            <CardWidget cantidad="10"></CardWidget>
-          </a>
+          {/* Ícono del carrito dinámico */}
+          <Link to="/carrito">
+            <CardWidget />
+          </Link>
           <Navbar.Toggle aria-controls="offcanvasNavbar" onClick={handleShow} />
           <Navbar.Offcanvas
             id="offcanvasNavbar"

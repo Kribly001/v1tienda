@@ -20,7 +20,7 @@ import Item from '../item/Item'
 #########################################*/
 
 
-const ItemList = () => { //Funcion contructora
+const ItemList = ({ category }) => { //Funcion contructora
 
   const [listaDeProductos, setListaDeProductos] = useState([]);
 
@@ -42,9 +42,14 @@ const ItemList = () => { //Funcion contructora
     fetchProductos();
   }, []);
 
+  // Filtrar productos por categoría
+  const filteredProducts = category === "Todo"
+    ? listaDeProductos
+    : listaDeProductos.filter((producto) => producto.category === category);
+
   return (
     <div className="item-list">
-      {listaDeProductos.map((producto) => (
+      {filteredProducts.map((producto) => (
         <Item key={producto.id} data={producto} />
       ))}
     </div>
