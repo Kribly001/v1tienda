@@ -71,7 +71,7 @@ const Home = (props) => { //Funcion contructora
       <br></br><br></br>
       <div className="mb-2 button-Product">
         <Button variant="primary" size="lg">
-          <Link className="my-link" to="/productos">
+          <Link className="my-link" to="/productos#categorias">
             <i className="bi bi-cart"></i> Ver Productos
           </Link>
         </Button>

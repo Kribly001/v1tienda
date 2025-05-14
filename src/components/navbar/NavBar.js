@@ -66,7 +66,7 @@ const NavBar = (props) => { //Funcion contructora
                 </Link>
               </Nav>
               <Nav>
-                <Link className="my-link" to="/productos" onClick={handleClose}>
+                <Link className="my-link" to="/productos#categorias" onClick={handleClose}>
                   Productos
                 </Link>
               </Nav>

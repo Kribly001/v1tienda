@@ -2,10 +2,12 @@ const { collection, addDoc } = require("firebase/firestore");
 const { db } = require("./firebaseConfig.node");
 
 const products = [
-{ id: 7, name: "Mouse rgb", brand: "A-Pro", price: "ARS 3950", description: "-Conector Usb-Apto para netbook, notebook, pc-Excelente Sensibilidad-Materiales excelente calidad",image:
-"https://i.imgur.com/SpciaFg.jpeg", category: "Informatica" },
-{ id: 8, name: "Mouse Inalambrico", brand: "A-Pro", price: "ARS 6150", description: "-Excelente Calidad-Color Negro-Inalambrico BT",image:
-"https://i.imgur.com/lH27G44.jpeg", category: "Informatica" }
+{ id: 9, name: "Combo Gamer 4 en 1", brand: "Noga", price: "27900", description: "Teclado-Mouse -Auriculares -Mouse pad-Retroiluminado",image:
+"https://i.imgur.com/GXiSQWY.jpeg", category: "Informatica" },
+{ id: 10, name: "Mouse Inalambrico", brand: "Time", price: "6300", description: "-Excelente calidad-Múltiples Colores-Inalambricos BT -Excelente Sensibilidad ",image:
+"https://i.imgur.com/K50PKMD.jpeg", category: "Informatica" },
+{ id: 11, name: "Teclado RGB", brand: "Noga", price: "11500", description: "-Cantidad de teclas: 104.-Interface: USB 2.0.-Cable: 140cm.-Medida: 43.6x13.1x2.5cm",image:
+"https://i.imgur.com/VqrsMnI.jpeg", category: "Informatica" }
 ];
 
 const uploadProducts = async () => {

@@ -4,6 +4,7 @@
 
 //Modulos
 import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 //Estilos
 import Carousel from 'react-bootstrap/Carousel';
 import './ItemListContainer.css';
@@ -19,10 +20,20 @@ import Form from 'react-bootstrap/Form';
 const ItemListContainer = (props) => { //Funcion contructora
 
   const [categoryName, setCategoryName] = useState("");
+  const location = useLocation();
 
   useEffect(() => {
     cambiarCategoriaTodo(); // Por defecto, mostrar "Todo"
   }, []);
+
+  useEffect(() => {
+    if (location.hash === "#categorias") {
+      const element = document.getElementById("categorias");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
 
   // Funciones para cambiar la categoría
   const cambiarCategoria = (nombreCategoria) => {
@@ -73,7 +84,7 @@ const ItemListContainer = (props) => { //Funcion contructora
         />
         <Button variant="outline-success">Buscar</Button>
       </Form>
-      <div className='buttons-Search'>
+      <div className='buttons-Search' id='categorias'>
         <Button variant="light" onClick={cambiarCategoriaTodo}>Todo</Button>
         <Button variant="light" onClick={() => cambiarCategoria("Camaras")}>Cámaras</Button>
         <Button variant="light" onClick={() => cambiarCategoria("Informatica")}>Informática</Button>

@@ -1,8 +1,6 @@
 /*#######################################
               Importaciones
 #########################################*/
-
-import React from "react";
 import './Item.css';
 import { useCart } from "../../context/CartContext"; // Importa el contexto del carrito
 
