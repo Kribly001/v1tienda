@@ -22,12 +22,12 @@ const ItemDetailContainer = () => { //Funcion contructora
   useEffect(() => {
     console.log(`Inicio producto con Id ${productoId}`);
     return () => {
-      console.log(`Finalizo renderizado del producto con id ${productoId}}`);
+      console.log(`Finalizo renderizado del producto con id ${productoId}`);
     }
   }, [productoId])
   return (
     <section className='itemDetail-box'>
-      <ItemDetail />
+      <ItemDetail productoId={productoId} />
     </section>
   )
 }

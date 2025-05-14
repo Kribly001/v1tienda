@@ -1,6 +1,7 @@
 /*#######################################
               Importaciones
 #########################################*/
+import { Link } from "react-router-dom";
 import './Item.css';
 import { useCart } from "../../context/CartContext"; // Importa el contexto del carrito
 
@@ -10,7 +11,11 @@ import { useCart } from "../../context/CartContext"; // Importa el contexto del 
 const Item = ({ data }) => { //Funcion contructora
 
   const { addToCart } = useCart(); // Obtén la función para agregar al carrito
-  const { brand, name, description, price, category, image } = data;
+  const { id, brand, name, description, price, category, image } = data;
+
+  const handleViewDetails = () => {
+    window.open(`/productos/${id}`, "_blank");
+  };
 
   return (
     <div className="orden-Card">
@@ -28,6 +33,9 @@ const Item = ({ data }) => { //Funcion contructora
           <span className="text-title">${price || "0.00"}</span>
           <button className="btn-agregar" onClick={() => addToCart(data)}>
             🛒 Agregar al carrito
+          </button>
+          <button className="btn-detalle" onClick={handleViewDetails}>
+            Ver detalles
           </button>
         </div>
       </div>
