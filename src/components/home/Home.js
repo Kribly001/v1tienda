@@ -56,6 +56,13 @@ const Home = (props) => { //Funcion contructora
       <div className='saludo'>
         <p>{props.greeting}</p>
       </div>
+      <div className="mb-2 button-Product">
+        <Button variant="primary" size="lg">
+          <Link className="my-link" to="/productos#categorias">
+            <i className="bi bi-cart"></i> Ver Productos
+          </Link>
+        </Button>
+      </div>
       <br></br><br></br><br></br><br></br>
       <div>
         {brandImages.map((src, index) => (
@@ -69,13 +76,6 @@ const Home = (props) => { //Funcion contructora
         <p>Bienvenido a Techteno, tu tienda en línea especializada en tecnología. Con más de 5 años de experiencia, ofrecemos una amplia gama de productos tecnológicos de última generación, desde auriculares y smartwatch hasta accesorios y gadgets innovadores. Trabajamos con las mejores marcas del mercado para garantizar calidad y rendimiento en cada producto. Nuestro compromiso es brindarte un servicio excepcional, envíos rápidos y asesoramiento personalizado para que encuentres justo lo que necesitas. ¡Gracias por elegir Techteno como tu aliado en tecnología!</p>
       </div>
       <br></br><br></br>
-      <div className="mb-2 button-Product">
-        <Button variant="primary" size="lg">
-          <Link className="my-link" to="/productos#categorias">
-            <i className="bi bi-cart"></i> Ver Productos
-          </Link>
-        </Button>
-      </div>
       <img className='adjust-Image' src='/images/ventas-Articulo.png' alt='pagos'></img>
     </main>
   )

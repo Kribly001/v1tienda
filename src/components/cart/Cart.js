@@ -1,13 +1,26 @@
 import React from "react";
+import {useEffect } from 'react';
 import { useCart } from "../../context/CartContext";
+import { useLocation } from 'react-router-dom';
 import './Cart.css';
 
 const Cart = () => {
   const { cart, removeFromCart, clearCart } = useCart();
   const totalPrice = cart.reduce((total, item) => total + item.price * item.quantity, 0);
+  const location = useLocation();
+
+  useEffect(() => {
+      if (location.hash === "#inicioCarrito") {
+        const element = document.getElementById("inicioCarrito");
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    }, [location]);
+  
 
   return (
-    <div className="cart-container">
+    <div className="cart-container" id="inicioCarrito">
       <h2 className="cart-title">🛒 Carrito de Compras</h2>
       {cart.length === 0 ? (
         <p className="cart-empty">El carrito está vacío.</p>

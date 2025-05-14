@@ -43,7 +43,7 @@ const NavBar = (props) => { //Funcion contructora
             </Link>
           </Navbar.Brand>
           {/* Ícono del carrito dinámico */}
-          <Link to="/carrito">
+          <Link to="/carrito#inicioCarrito" onClick={handleClose}>
             <CardWidget />
           </Link>
           <Navbar.Toggle aria-controls="offcanvasNavbar" onClick={handleShow} />
