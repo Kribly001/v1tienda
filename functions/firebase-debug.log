@@ -1,0 +1,299 @@
+[debug] [2025-05-14T22:46:26.150Z] ----------------------------------------------------------------------
+[debug] [2025-05-14T22:46:26.153Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Usuario\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2025-05-14T22:46:26.153Z] CLI Version:   14.3.1
+[debug] [2025-05-14T22:46:26.153Z] Platform:      win32
+[debug] [2025-05-14T22:46:26.153Z] Node Version:  v20.17.0
+[debug] [2025-05-14T22:46:26.153Z] Time:          Wed May 14 2025 19:46:26 GMT-0300 (hora estándar de Argentina)
+[debug] [2025-05-14T22:46:26.154Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-14T22:46:26.326Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"dependencies"}
+[debug] [2025-05-14T22:46:26.330Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-14T22:46:26.330Z] > authorizing via signed-in user (contactmaxi531@gmail.com)
+[debug] [2025-05-14T22:46:26.331Z] [iam] checking project techteno-1e8ad for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2025-05-14T22:46:26.331Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:26.332Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:26.332Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/techteno-1e8ad:testIamPermissions [none]
+[debug] [2025-05-14T22:46:26.333Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/techteno-1e8ad:testIamPermissions x-goog-quota-user=projects/techteno-1e8ad
+[debug] [2025-05-14T22:46:26.333Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/techteno-1e8ad:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2025-05-14T22:46:27.309Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/techteno-1e8ad:testIamPermissions 200
+[debug] [2025-05-14T22:46:27.309Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/techteno-1e8ad:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2025-05-14T22:46:27.310Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:27.310Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:27.310Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/techteno-1e8ad/serviceAccounts/techteno-1e8ad@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2025-05-14T22:46:27.310Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/techteno-1e8ad/serviceAccounts/techteno-1e8ad@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2025-05-14T22:46:28.225Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/techteno-1e8ad/serviceAccounts/techteno-1e8ad@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2025-05-14T22:46:28.225Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/techteno-1e8ad/serviceAccounts/techteno-1e8ad@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'techteno-1e8ad'...
+[info] 
+[info] i  deploying functions 
+[debug] [2025-05-14T22:46:28.229Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:28.229Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:28.229Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/techteno-1e8ad/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2025-05-14T22:46:28.229Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/techteno-1e8ad/services/cloudresourcemanager.googleapis.com x-goog-quota-user=projects/techteno-1e8ad
+[debug] [2025-05-14T22:46:29.395Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/techteno-1e8ad/services/cloudresourcemanager.googleapis.com 200
+[debug] [2025-05-14T22:46:29.396Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/techteno-1e8ad/services/cloudresourcemanager.googleapis.com [omitted]
+[debug] [2025-05-14T22:46:29.396Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:29.396Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:29.396Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/techteno-1e8ad [none]
+[debug] [2025-05-14T22:46:29.637Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/techteno-1e8ad 200
+[debug] [2025-05-14T22:46:29.637Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/techteno-1e8ad {"projectNumber":"196223760508","projectId":"techteno-1e8ad","lifecycleState":"ACTIVE","name":"Techteno","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-05-13T05:19:35.383814Z"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[debug] [2025-05-14T22:46:29.638Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:29.638Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:29.639Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:29.639Z] Checked if tokens are valid: true, expires at: 1747265295754
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[debug] [2025-05-14T22:46:29.639Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:29.639Z] Checked if tokens are valid: true, expires at: 1747265295754
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2025-05-14T22:46:29.639Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:29.639Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:29.640Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/techteno-1e8ad/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-05-14T22:46:29.640Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/techteno-1e8ad/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/techteno-1e8ad
+[debug] [2025-05-14T22:46:29.640Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/techteno-1e8ad/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-05-14T22:46:29.640Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/techteno-1e8ad/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/techteno-1e8ad
+[debug] [2025-05-14T22:46:29.641Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/techteno-1e8ad/services/cloudbuild.googleapis.com [none]
+[debug] [2025-05-14T22:46:29.641Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/techteno-1e8ad/services/cloudbuild.googleapis.com x-goog-quota-user=projects/techteno-1e8ad
+[debug] [2025-05-14T22:46:29.642Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/techteno-1e8ad/services/artifactregistry.googleapis.com [none]
+[debug] [2025-05-14T22:46:29.642Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/techteno-1e8ad/services/artifactregistry.googleapis.com x-goog-quota-user=projects/techteno-1e8ad
+[debug] [2025-05-14T22:46:30.058Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/techteno-1e8ad/services/cloudfunctions.googleapis.com 200
+[debug] [2025-05-14T22:46:30.058Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/techteno-1e8ad/services/cloudfunctions.googleapis.com [omitted]
+[info] +  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2025-05-14T22:46:30.774Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/techteno-1e8ad/services/runtimeconfig.googleapis.com 200
+[debug] [2025-05-14T22:46:30.774Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/techteno-1e8ad/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-05-14T22:46:30.779Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/techteno-1e8ad/services/artifactregistry.googleapis.com 200
+[debug] [2025-05-14T22:46:30.779Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/techteno-1e8ad/services/artifactregistry.googleapis.com [omitted]
+[info] +  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2025-05-14T22:46:30.789Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/techteno-1e8ad/services/cloudbuild.googleapis.com 200
+[debug] [2025-05-14T22:46:30.789Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/techteno-1e8ad/services/cloudbuild.googleapis.com [omitted]
+[info] +  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2025-05-14T22:46:30.789Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:30.789Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:30.789Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/techteno-1e8ad/adminSdkConfig [none]
+[debug] [2025-05-14T22:46:31.288Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/techteno-1e8ad/adminSdkConfig 200
+[debug] [2025-05-14T22:46:31.288Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/techteno-1e8ad/adminSdkConfig {"projectId":"techteno-1e8ad","storageBucket":"techteno-1e8ad.firebasestorage.app"}
+[debug] [2025-05-14T22:46:31.288Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:31.288Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:31.288Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/techteno-1e8ad/configs [none]
+[debug] [2025-05-14T22:46:32.351Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/techteno-1e8ad/configs 200
+[debug] [2025-05-14T22:46:32.351Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/techteno-1e8ad/configs {}
+[debug] [2025-05-14T22:46:32.352Z] Validating nodejs source
+[warn] !  functions: Runtime Node.js 18 was deprecated on 2025-04-30 and will be decommissioned on 2025-10-31, after which you will not be able to deploy without upgrading. Consider upgrading now to avoid disruption. See https://cloud.google.com/functions/docs/runtime-support for full details on the lifecycle policy 
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2025-05-14T22:46:33.423Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.0.0",
+    "firebase-functions": "^3.23.0",
+    "mercadopago": "^1.5.13"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-05-14T22:46:33.423Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase default to determine what to deploy 
+[info] i  functions: You are using a version of firebase-functions SDK (3.23.0) that does not have support for the newest Firebase Extensions features. Please update firebase-functions SDK to >=5.1.0 to use them correctly 
+[debug] [2025-05-14T22:46:33.425Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-05-14T22:46:33.433Z] Found firebase-functions binary at 'C:\Users\Usuario\Desktop\v1tienda\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8775
+
+[debug] [2025-05-14T22:46:33.877Z] Got response from /__/functions.yaml {"endpoints":{"createPreference":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"createPreference"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] i  functions: preparing functions directory for uploading... 
+[info] i  functions: packaged C:\Users\Usuario\Desktop\v1tienda\functions (72.86 KB) for uploading 
+[debug] [2025-05-14T22:46:38.937Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:38.937Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:38.938Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v1/projects/techteno-1e8ad/locations/-/functions [none]
+[debug] [2025-05-14T22:46:40.275Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v1/projects/techteno-1e8ad/locations/-/functions 200
+[debug] [2025-05-14T22:46:40.275Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v1/projects/techteno-1e8ad/locations/-/functions {}
+[debug] [2025-05-14T22:46:40.275Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:40.275Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:40.275Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/techteno-1e8ad/locations/-/functions filter=environment%3D%22GEN_2%22
+[debug] [2025-05-14T22:46:41.503Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/techteno-1e8ad/locations/-/functions 200
+[debug] [2025-05-14T22:46:41.503Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/techteno-1e8ad/locations/-/functions {}
+[debug] [2025-05-14T22:46:41.505Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:41.505Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:41.505Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/techteno-1e8ad/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2025-05-14T22:46:41.505Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/techteno-1e8ad/services/cloudresourcemanager.googleapis.com x-goog-quota-user=projects/techteno-1e8ad
+[debug] [2025-05-14T22:46:44.499Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/techteno-1e8ad/services/cloudresourcemanager.googleapis.com 200
+[debug] [2025-05-14T22:46:44.500Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/techteno-1e8ad/services/cloudresourcemanager.googleapis.com [omitted]
+[debug] [2025-05-14T22:46:44.500Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:44.500Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:44.500Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/techteno-1e8ad [none]
+[debug] [2025-05-14T22:46:45.469Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/techteno-1e8ad 200
+[debug] [2025-05-14T22:46:45.469Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/techteno-1e8ad {"projectNumber":"196223760508","projectId":"techteno-1e8ad","lifecycleState":"ACTIVE","name":"Techteno","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-05-13T05:19:35.383814Z"}
+[debug] [2025-05-14T22:46:45.470Z] [functions] found 1 new HTTP functions, testing setIamPolicy permission...
+[debug] [2025-05-14T22:46:45.470Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:45.470Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:45.470Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/techteno-1e8ad:testIamPermissions [none]
+[debug] [2025-05-14T22:46:45.470Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/techteno-1e8ad:testIamPermissions x-goog-quota-user=projects/techteno-1e8ad
+[debug] [2025-05-14T22:46:45.470Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/techteno-1e8ad:testIamPermissions {"permissions":["cloudfunctions.functions.setIamPolicy"]}
+[debug] [2025-05-14T22:46:45.667Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/techteno-1e8ad:testIamPermissions 200
+[debug] [2025-05-14T22:46:45.667Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/techteno-1e8ad:testIamPermissions {"permissions":["cloudfunctions.functions.setIamPolicy"]}
+[debug] [2025-05-14T22:46:45.667Z] [functions] found setIamPolicy permission, proceeding with deploy
+[debug] [2025-05-14T22:46:45.668Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:45.668Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:45.668Z] >>> [apiv2][query] POST https://cloudfunctions.googleapis.com/v1/projects/techteno-1e8ad/locations/us-central1/functions:generateUploadUrl [none]
+[debug] [2025-05-14T22:46:45.668Z] >>> [apiv2][body] POST https://cloudfunctions.googleapis.com/v1/projects/techteno-1e8ad/locations/us-central1/functions:generateUploadUrl {}
+[debug] [2025-05-14T22:46:47.190Z] <<< [apiv2][status] POST https://cloudfunctions.googleapis.com/v1/projects/techteno-1e8ad/locations/us-central1/functions:generateUploadUrl 200
+[debug] [2025-05-14T22:46:47.191Z] <<< [apiv2][body] POST https://cloudfunctions.googleapis.com/v1/projects/techteno-1e8ad/locations/us-central1/functions:generateUploadUrl {"uploadUrl":"https://storage.googleapis.com/uploads-960980867368.us-central1.cloudfunctions.appspot.com/05ea34bb-3128-4a14-a110-90656b0b03b9.zip?GoogleAccessId=service-196223760508@gcf-admin-robot.iam.gserviceaccount.com&Expires=1747264605&Signature=IE4kLVptVcsfzRnXxedbGWZxknwu%2BkeKqaSqwDaR5j72r0YUIV3XWb3E0bKg7Ej45Zgif23XNyYjcLSC%2Fa2h3%2FeFCW8g%2Bny14%2F1I3B%2B6MPKEGkS9ZeglLz5dG1mjQQMHRYDZrToRUOUa1GXibIXVak6em0Ved%2BPNMNC2jLHsrW72hJaEYI0jUzuVsSWJoJu%2FQVOVpPOPeLWUtPZUQellEOFWXqGsFiLMQDnzABezCPE1wSSM7ycSSaq4WfydC4vlZGleY%2BYNm90zEsFyJNpTvYzk0Bsw7RZaPPyOl57Wyxra2fYvTsbcLSw3o6%2Bw7k1I%2BaxQnoJq2QL9AvM5FWxolw%3D%3D"}
+[debug] [2025-05-14T22:46:47.191Z] >>> [apiv2][query] PUT https://storage.googleapis.com/uploads-960980867368.us-central1.cloudfunctions.appspot.com/05ea34bb-3128-4a14-a110-90656b0b03b9.zip GoogleAccessId=service-196223760508%40gcf-admin-robot.iam.gserviceaccount.com&Expires=1747264605&Signature=IE4kLVptVcsfzRnXxedbGWZxknwu%2BkeKqaSqwDaR5j72r0YUIV3XWb3E0bKg7Ej45Zgif23XNyYjcLSC%2Fa2h3%2FeFCW8g%2Bny14%2F1I3B%2B6MPKEGkS9ZeglLz5dG1mjQQMHRYDZrToRUOUa1GXibIXVak6em0Ved%2BPNMNC2jLHsrW72hJaEYI0jUzuVsSWJoJu%2FQVOVpPOPeLWUtPZUQellEOFWXqGsFiLMQDnzABezCPE1wSSM7ycSSaq4WfydC4vlZGleY%2BYNm90zEsFyJNpTvYzk0Bsw7RZaPPyOl57Wyxra2fYvTsbcLSw3o6%2Bw7k1I%2BaxQnoJq2QL9AvM5FWxolw%3D%3D
+[debug] [2025-05-14T22:46:47.191Z] >>> [apiv2][body] PUT https://storage.googleapis.com/uploads-960980867368.us-central1.cloudfunctions.appspot.com/05ea34bb-3128-4a14-a110-90656b0b03b9.zip [stream]
+[debug] [2025-05-14T22:46:48.691Z] <<< [apiv2][status] PUT https://storage.googleapis.com/uploads-960980867368.us-central1.cloudfunctions.appspot.com/05ea34bb-3128-4a14-a110-90656b0b03b9.zip 200
+[debug] [2025-05-14T22:46:48.691Z] <<< [apiv2][body] PUT https://storage.googleapis.com/uploads-960980867368.us-central1.cloudfunctions.appspot.com/05ea34bb-3128-4a14-a110-90656b0b03b9.zip [omitted]
+[info] +  functions: functions folder uploaded successfully 
+[info] i  functions: creating Node.js 18 (1st Gen) function createPreference(us-central1)... 
+[debug] [2025-05-14T22:46:48.695Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:48.695Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:48.695Z] >>> [apiv2][query] POST https://cloudfunctions.googleapis.com/v1/projects/techteno-1e8ad/locations/us-central1/functions [none]
+[debug] [2025-05-14T22:46:48.695Z] >>> [apiv2][body] POST https://cloudfunctions.googleapis.com/v1/projects/techteno-1e8ad/locations/us-central1/functions {"name":"projects/techteno-1e8ad/locations/us-central1/functions/createPreference","sourceUploadUrl":"https://storage.googleapis.com/uploads-960980867368.us-central1.cloudfunctions.appspot.com/05ea34bb-3128-4a14-a110-90656b0b03b9.zip?GoogleAccessId=service-196223760508@gcf-admin-robot.iam.gserviceaccount.com&Expires=1747264605&Signature=IE4kLVptVcsfzRnXxedbGWZxknwu%2BkeKqaSqwDaR5j72r0YUIV3XWb3E0bKg7Ej45Zgif23XNyYjcLSC%2Fa2h3%2FeFCW8g%2Bny14%2F1I3B%2B6MPKEGkS9ZeglLz5dG1mjQQMHRYDZrToRUOUa1GXibIXVak6em0Ved%2BPNMNC2jLHsrW72hJaEYI0jUzuVsSWJoJu%2FQVOVpPOPeLWUtPZUQellEOFWXqGsFiLMQDnzABezCPE1wSSM7ycSSaq4WfydC4vlZGleY%2BYNm90zEsFyJNpTvYzk0Bsw7RZaPPyOl57Wyxra2fYvTsbcLSw3o6%2Bw7k1I%2BaxQnoJq2QL9AvM5FWxolw%3D%3D","entryPoint":"createPreference","runtime":"nodejs18","dockerRegistry":"ARTIFACT_REGISTRY","labels":{"deployment-tool":"cli-firebase","firebase-functions-hash":"1d64df63a9ea716a1e5e759ed2b528a833438276"},"httpsTrigger":{"securityLevel":"SECURE_ALWAYS"},"environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"techteno-1e8ad\",\"storageBucket\":\"techteno-1e8ad.firebasestorage.app\"}","GCLOUD_PROJECT":"techteno-1e8ad","EVENTARC_CLOUD_EVENT_SOURCE":"projects/techteno-1e8ad/locations/us-central1/functions/createPreference"},"buildEnvironmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""}}
+[debug] [2025-05-14T22:46:50.469Z] <<< [apiv2][status] POST https://cloudfunctions.googleapis.com/v1/projects/techteno-1e8ad/locations/us-central1/functions 200
+[debug] [2025-05-14T22:46:50.469Z] <<< [apiv2][body] POST https://cloudfunctions.googleapis.com/v1/projects/techteno-1e8ad/locations/us-central1/functions {"name":"operations/cHJvamVjdHMvdGVjaHRlbm8tMWU4YWQvbG9jYXRpb25zL3VzLWNlbnRyYWwxL29wZXJhdGlvbnMvb3BlcmF0aW9uLTE3NDcyNjI4MDc5ODMtNjM1MjA1MmZmYzU3Mi1iZTAzNmZmYy0yNzcxMDMzNA","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v1.OperationMetadataV1","target":"projects/techteno-1e8ad/locations/us-central1/functions/createPreference","updateTime":"2025-05-14T22:46:48.554748136Z"}}
+[debug] [2025-05-14T22:46:50.470Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:50.470Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:50.470Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v1/operations/cHJvamVjdHMvdGVjaHRlbm8tMWU4YWQvbG9jYXRpb25zL3VzLWNlbnRyYWwxL29wZXJhdGlvbnMvb3BlcmF0aW9uLTE3NDcyNjI4MDc5ODMtNjM1MjA1MmZmYzU3Mi1iZTAzNmZmYy0yNzcxMDMzNA [none]
+[debug] [2025-05-14T22:46:51.580Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v1/operations/cHJvamVjdHMvdGVjaHRlbm8tMWU4YWQvbG9jYXRpb25zL3VzLWNlbnRyYWwxL29wZXJhdGlvbnMvb3BlcmF0aW9uLTE3NDcyNjI4MDc5ODMtNjM1MjA1MmZmYzU3Mi1iZTAzNmZmYy0yNzcxMDMzNA 200
+[debug] [2025-05-14T22:46:51.580Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v1/operations/cHJvamVjdHMvdGVjaHRlbm8tMWU4YWQvbG9jYXRpb25zL3VzLWNlbnRyYWwxL29wZXJhdGlvbnMvb3BlcmF0aW9uLTE3NDcyNjI4MDc5ODMtNjM1MjA1MmZmYzU3Mi1iZTAzNmZmYy0yNzcxMDMzNA {"name":"operations/cHJvamVjdHMvdGVjaHRlbm8tMWU4YWQvbG9jYXRpb25zL3VzLWNlbnRyYWwxL29wZXJhdGlvbnMvb3BlcmF0aW9uLTE3NDcyNjI4MDc5ODMtNjM1MjA1MmZmYzU3Mi1iZTAzNmZmYy0yNzcxMDMzNA","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v1.OperationMetadataV1","target":"projects/techteno-1e8ad/locations/us-central1/functions/createPreference","type":"CREATE_FUNCTION","request":{"@type":"type.googleapis.com/google.cloud.functions.v1.CloudFunction","name":"projects/techteno-1e8ad/locations/us-central1/functions/createPreference","httpsTrigger":{"securityLevel":"SECURE_ALWAYS"},"entryPoint":"createPreference","updateTime":"1970-01-01T00:00:00Z","labels":{"deployment-tool":"cli-firebase","firebase-functions-hash":"1d64df63a9ea716a1e5e759ed2b528a833438276"},"sourceUploadUrl":"https://storage.googleapis.com/uploads-960980867368.us-central1.cloudfunctions.appspot.com/05ea34bb-3128-4a14-a110-90656b0b03b9.zip?GoogleAccessId=service-196223760508@gcf-admin-robot.iam.gserviceaccount.com&Expires=1747264605&Signature=IE4kLVptVcsfzRnXxedbGWZxknwu%2BkeKqaSqwDaR5j72r0YUIV3XWb3E0bKg7Ej45Zgif23XNyYjcLSC%2Fa2h3%2FeFCW8g%2Bny14%2F1I3B%2B6MPKEGkS9ZeglLz5dG1mjQQMHRYDZrToRUOUa1GXibIXVak6em0Ved%2BPNMNC2jLHsrW72hJaEYI0jUzuVsSWJoJu%2FQVOVpPOPeLWUtPZUQellEOFWXqGsFiLMQDnzABezCPE1wSSM7ycSSaq4WfydC4vlZGleY%2BYNm90zEsFyJNpTvYzk0Bsw7RZaPPyOl57Wyxra2fYvTsbcLSw3o6%2Bw7k1I%2BaxQnoJq2QL9AvM5FWxolw%3D%3D","environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"techteno-1e8ad\",\"storageBucket\":\"techteno-1e8ad.firebasestorage.app\"}","GCLOUD_PROJECT":"techteno-1e8ad","EVENTARC_CLOUD_EVENT_SOURCE":"projects/techteno-1e8ad/locations/us-central1/functions/createPreference"},"runtime":"nodejs18","buildEnvironmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"dockerRegistry":"ARTIFACT_REGISTRY"},"versionId":"1","updateTime":"2025-05-14T22:46:48.554748136Z"}}
+[debug] [2025-05-14T22:46:52.090Z] [create-default-us-central1-createPreference] Retrying task index 0
+[debug] [2025-05-14T22:46:52.091Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:52.091Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:52.091Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v1/operations/cHJvamVjdHMvdGVjaHRlbm8tMWU4YWQvbG9jYXRpb25zL3VzLWNlbnRyYWwxL29wZXJhdGlvbnMvb3BlcmF0aW9uLTE3NDcyNjI4MDc5ODMtNjM1MjA1MmZmYzU3Mi1iZTAzNmZmYy0yNzcxMDMzNA [none]
+[debug] [2025-05-14T22:46:53.254Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v1/operations/cHJvamVjdHMvdGVjaHRlbm8tMWU4YWQvbG9jYXRpb25zL3VzLWNlbnRyYWwxL29wZXJhdGlvbnMvb3BlcmF0aW9uLTE3NDcyNjI4MDc5ODMtNjM1MjA1MmZmYzU3Mi1iZTAzNmZmYy0yNzcxMDMzNA 200
+[debug] [2025-05-14T22:46:53.255Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v1/operations/cHJvamVjdHMvdGVjaHRlbm8tMWU4YWQvbG9jYXRpb25zL3VzLWNlbnRyYWwxL29wZXJhdGlvbnMvb3BlcmF0aW9uLTE3NDcyNjI4MDc5ODMtNjM1MjA1MmZmYzU3Mi1iZTAzNmZmYy0yNzcxMDMzNA {"name":"operations/cHJvamVjdHMvdGVjaHRlbm8tMWU4YWQvbG9jYXRpb25zL3VzLWNlbnRyYWwxL29wZXJhdGlvbnMvb3BlcmF0aW9uLTE3NDcyNjI4MDc5ODMtNjM1MjA1MmZmYzU3Mi1iZTAzNmZmYy0yNzcxMDMzNA","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v1.OperationMetadataV1","target":"projects/techteno-1e8ad/locations/us-central1/functions/createPreference","type":"CREATE_FUNCTION","request":{"@type":"type.googleapis.com/google.cloud.functions.v1.CloudFunction","name":"projects/techteno-1e8ad/locations/us-central1/functions/createPreference","httpsTrigger":{"securityLevel":"SECURE_ALWAYS"},"entryPoint":"createPreference","updateTime":"1970-01-01T00:00:00Z","labels":{"deployment-tool":"cli-firebase","firebase-functions-hash":"1d64df63a9ea716a1e5e759ed2b528a833438276"},"sourceUploadUrl":"https://storage.googleapis.com/uploads-960980867368.us-central1.cloudfunctions.appspot.com/05ea34bb-3128-4a14-a110-90656b0b03b9.zip?GoogleAccessId=service-196223760508@gcf-admin-robot.iam.gserviceaccount.com&Expires=1747264605&Signature=IE4kLVptVcsfzRnXxedbGWZxknwu%2BkeKqaSqwDaR5j72r0YUIV3XWb3E0bKg7Ej45Zgif23XNyYjcLSC%2Fa2h3%2FeFCW8g%2Bny14%2F1I3B%2B6MPKEGkS9ZeglLz5dG1mjQQMHRYDZrToRUOUa1GXibIXVak6em0Ved%2BPNMNC2jLHsrW72hJaEYI0jUzuVsSWJoJu%2FQVOVpPOPeLWUtPZUQellEOFWXqGsFiLMQDnzABezCPE1wSSM7ycSSaq4WfydC4vlZGleY%2BYNm90zEsFyJNpTvYzk0Bsw7RZaPPyOl57Wyxra2fYvTsbcLSw3o6%2Bw7k1I%2BaxQnoJq2QL9AvM5FWxolw%3D%3D","environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"techteno-1e8ad\",\"storageBucket\":\"techteno-1e8ad.firebasestorage.app\"}","GCLOUD_PROJECT":"techteno-1e8ad","EVENTARC_CLOUD_EVENT_SOURCE":"projects/techteno-1e8ad/locations/us-central1/functions/createPreference"},"runtime":"nodejs18","buildEnvironmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"dockerRegistry":"ARTIFACT_REGISTRY"},"versionId":"1","updateTime":"2025-05-14T22:46:48.554748136Z"}}
+[debug] [2025-05-14T22:46:54.259Z] [create-default-us-central1-createPreference] Retrying task index 0
+[debug] [2025-05-14T22:46:54.259Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:54.259Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:54.259Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v1/operations/cHJvamVjdHMvdGVjaHRlbm8tMWU4YWQvbG9jYXRpb25zL3VzLWNlbnRyYWwxL29wZXJhdGlvbnMvb3BlcmF0aW9uLTE3NDcyNjI4MDc5ODMtNjM1MjA1MmZmYzU3Mi1iZTAzNmZmYy0yNzcxMDMzNA [none]
+[debug] [2025-05-14T22:46:54.908Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v1/operations/cHJvamVjdHMvdGVjaHRlbm8tMWU4YWQvbG9jYXRpb25zL3VzLWNlbnRyYWwxL29wZXJhdGlvbnMvb3BlcmF0aW9uLTE3NDcyNjI4MDc5ODMtNjM1MjA1MmZmYzU3Mi1iZTAzNmZmYy0yNzcxMDMzNA 200
+[debug] [2025-05-14T22:46:54.909Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v1/operations/cHJvamVjdHMvdGVjaHRlbm8tMWU4YWQvbG9jYXRpb25zL3VzLWNlbnRyYWwxL29wZXJhdGlvbnMvb3BlcmF0aW9uLTE3NDcyNjI4MDc5ODMtNjM1MjA1MmZmYzU3Mi1iZTAzNmZmYy0yNzcxMDMzNA {"name":"operations/cHJvamVjdHMvdGVjaHRlbm8tMWU4YWQvbG9jYXRpb25zL3VzLWNlbnRyYWwxL29wZXJhdGlvbnMvb3BlcmF0aW9uLTE3NDcyNjI4MDc5ODMtNjM1MjA1MmZmYzU3Mi1iZTAzNmZmYy0yNzcxMDMzNA","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v1.OperationMetadataV1","target":"projects/techteno-1e8ad/locations/us-central1/functions/createPreference","type":"CREATE_FUNCTION","request":{"@type":"type.googleapis.com/google.cloud.functions.v1.CloudFunction","name":"projects/techteno-1e8ad/locations/us-central1/functions/createPreference","httpsTrigger":{"securityLevel":"SECURE_ALWAYS"},"entryPoint":"createPreference","updateTime":"1970-01-01T00:00:00Z","labels":{"deployment-tool":"cli-firebase","firebase-functions-hash":"1d64df63a9ea716a1e5e759ed2b528a833438276"},"sourceUploadUrl":"https://storage.googleapis.com/uploads-960980867368.us-central1.cloudfunctions.appspot.com/05ea34bb-3128-4a14-a110-90656b0b03b9.zip?GoogleAccessId=service-196223760508@gcf-admin-robot.iam.gserviceaccount.com&Expires=1747264605&Signature=IE4kLVptVcsfzRnXxedbGWZxknwu%2BkeKqaSqwDaR5j72r0YUIV3XWb3E0bKg7Ej45Zgif23XNyYjcLSC%2Fa2h3%2FeFCW8g%2Bny14%2F1I3B%2B6MPKEGkS9ZeglLz5dG1mjQQMHRYDZrToRUOUa1GXibIXVak6em0Ved%2BPNMNC2jLHsrW72hJaEYI0jUzuVsSWJoJu%2FQVOVpPOPeLWUtPZUQellEOFWXqGsFiLMQDnzABezCPE1wSSM7ycSSaq4WfydC4vlZGleY%2BYNm90zEsFyJNpTvYzk0Bsw7RZaPPyOl57Wyxra2fYvTsbcLSw3o6%2Bw7k1I%2BaxQnoJq2QL9AvM5FWxolw%3D%3D","environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"techteno-1e8ad\",\"storageBucket\":\"techteno-1e8ad.firebasestorage.app\"}","GCLOUD_PROJECT":"techteno-1e8ad","EVENTARC_CLOUD_EVENT_SOURCE":"projects/techteno-1e8ad/locations/us-central1/functions/createPreference"},"runtime":"nodejs18","buildEnvironmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"dockerRegistry":"ARTIFACT_REGISTRY"},"versionId":"1","updateTime":"2025-05-14T22:46:48.554748136Z","buildId":"08b2ab4a-c9c4-4ca0-9ad2-ef1a3e4d4546","buildName":"projects/196223760508/locations/us-central1/builds/08b2ab4a-c9c4-4ca0-9ad2-ef1a3e4d4546"}}
+[debug] [2025-05-14T22:46:56.913Z] [create-default-us-central1-createPreference] Retrying task index 0
+[debug] [2025-05-14T22:46:56.914Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:56.914Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:46:56.914Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v1/operations/cHJvamVjdHMvdGVjaHRlbm8tMWU4YWQvbG9jYXRpb25zL3VzLWNlbnRyYWwxL29wZXJhdGlvbnMvb3BlcmF0aW9uLTE3NDcyNjI4MDc5ODMtNjM1MjA1MmZmYzU3Mi1iZTAzNmZmYy0yNzcxMDMzNA [none]
+[debug] [2025-05-14T22:46:59.566Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v1/operations/cHJvamVjdHMvdGVjaHRlbm8tMWU4YWQvbG9jYXRpb25zL3VzLWNlbnRyYWwxL29wZXJhdGlvbnMvb3BlcmF0aW9uLTE3NDcyNjI4MDc5ODMtNjM1MjA1MmZmYzU3Mi1iZTAzNmZmYy0yNzcxMDMzNA 200
+[debug] [2025-05-14T22:46:59.566Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v1/operations/cHJvamVjdHMvdGVjaHRlbm8tMWU4YWQvbG9jYXRpb25zL3VzLWNlbnRyYWwxL29wZXJhdGlvbnMvb3BlcmF0aW9uLTE3NDcyNjI4MDc5ODMtNjM1MjA1MmZmYzU3Mi1iZTAzNmZmYy0yNzcxMDMzNA {"name":"operations/cHJvamVjdHMvdGVjaHRlbm8tMWU4YWQvbG9jYXRpb25zL3VzLWNlbnRyYWwxL29wZXJhdGlvbnMvb3BlcmF0aW9uLTE3NDcyNjI4MDc5ODMtNjM1MjA1MmZmYzU3Mi1iZTAzNmZmYy0yNzcxMDMzNA","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v1.OperationMetadataV1","target":"projects/techteno-1e8ad/locations/us-central1/functions/createPreference","type":"CREATE_FUNCTION","request":{"@type":"type.googleapis.com/google.cloud.functions.v1.CloudFunction","name":"projects/techteno-1e8ad/locations/us-central1/functions/createPreference","httpsTrigger":{"securityLevel":"SECURE_ALWAYS"},"entryPoint":"createPreference","updateTime":"1970-01-01T00:00:00Z","labels":{"deployment-tool":"cli-firebase","firebase-functions-hash":"1d64df63a9ea716a1e5e759ed2b528a833438276"},"sourceUploadUrl":"https://storage.googleapis.com/uploads-960980867368.us-central1.cloudfunctions.appspot.com/05ea34bb-3128-4a14-a110-90656b0b03b9.zip?GoogleAccessId=service-196223760508@gcf-admin-robot.iam.gserviceaccount.com&Expires=1747264605&Signature=IE4kLVptVcsfzRnXxedbGWZxknwu%2BkeKqaSqwDaR5j72r0YUIV3XWb3E0bKg7Ej45Zgif23XNyYjcLSC%2Fa2h3%2FeFCW8g%2Bny14%2F1I3B%2B6MPKEGkS9ZeglLz5dG1mjQQMHRYDZrToRUOUa1GXibIXVak6em0Ved%2BPNMNC2jLHsrW72hJaEYI0jUzuVsSWJoJu%2FQVOVpPOPeLWUtPZUQellEOFWXqGsFiLMQDnzABezCPE1wSSM7ycSSaq4WfydC4vlZGleY%2BYNm90zEsFyJNpTvYzk0Bsw7RZaPPyOl57Wyxra2fYvTsbcLSw3o6%2Bw7k1I%2BaxQnoJq2QL9AvM5FWxolw%3D%3D","environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"techteno-1e8ad\",\"storageBucket\":\"techteno-1e8ad.firebasestorage.app\"}","GCLOUD_PROJECT":"techteno-1e8ad","EVENTARC_CLOUD_EVENT_SOURCE":"projects/techteno-1e8ad/locations/us-central1/functions/createPreference"},"runtime":"nodejs18","buildEnvironmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"dockerRegistry":"ARTIFACT_REGISTRY"},"versionId":"1","updateTime":"2025-05-14T22:46:48.554748136Z","buildId":"08b2ab4a-c9c4-4ca0-9ad2-ef1a3e4d4546","buildName":"projects/196223760508/locations/us-central1/builds/08b2ab4a-c9c4-4ca0-9ad2-ef1a3e4d4546"}}
+[debug] [2025-05-14T22:47:03.580Z] [create-default-us-central1-createPreference] Retrying task index 0
+[debug] [2025-05-14T22:47:03.580Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:47:03.580Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:47:03.580Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v1/operations/cHJvamVjdHMvdGVjaHRlbm8tMWU4YWQvbG9jYXRpb25zL3VzLWNlbnRyYWwxL29wZXJhdGlvbnMvb3BlcmF0aW9uLTE3NDcyNjI4MDc5ODMtNjM1MjA1MmZmYzU3Mi1iZTAzNmZmYy0yNzcxMDMzNA [none]
+[debug] [2025-05-14T22:47:04.228Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v1/operations/cHJvamVjdHMvdGVjaHRlbm8tMWU4YWQvbG9jYXRpb25zL3VzLWNlbnRyYWwxL29wZXJhdGlvbnMvb3BlcmF0aW9uLTE3NDcyNjI4MDc5ODMtNjM1MjA1MmZmYzU3Mi1iZTAzNmZmYy0yNzcxMDMzNA 200
+[debug] [2025-05-14T22:47:04.228Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v1/operations/cHJvamVjdHMvdGVjaHRlbm8tMWU4YWQvbG9jYXRpb25zL3VzLWNlbnRyYWwxL29wZXJhdGlvbnMvb3BlcmF0aW9uLTE3NDcyNjI4MDc5ODMtNjM1MjA1MmZmYzU3Mi1iZTAzNmZmYy0yNzcxMDMzNA {"name":"operations/cHJvamVjdHMvdGVjaHRlbm8tMWU4YWQvbG9jYXRpb25zL3VzLWNlbnRyYWwxL29wZXJhdGlvbnMvb3BlcmF0aW9uLTE3NDcyNjI4MDc5ODMtNjM1MjA1MmZmYzU3Mi1iZTAzNmZmYy0yNzcxMDMzNA","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v1.OperationMetadataV1","target":"projects/techteno-1e8ad/locations/us-central1/functions/createPreference","type":"CREATE_FUNCTION","request":{"@type":"type.googleapis.com/google.cloud.functions.v1.CloudFunction","name":"projects/techteno-1e8ad/locations/us-central1/functions/createPreference","httpsTrigger":{"securityLevel":"SECURE_ALWAYS"},"entryPoint":"createPreference","updateTime":"1970-01-01T00:00:00Z","labels":{"deployment-tool":"cli-firebase","firebase-functions-hash":"1d64df63a9ea716a1e5e759ed2b528a833438276"},"sourceUploadUrl":"https://storage.googleapis.com/uploads-960980867368.us-central1.cloudfunctions.appspot.com/05ea34bb-3128-4a14-a110-90656b0b03b9.zip?GoogleAccessId=service-196223760508@gcf-admin-robot.iam.gserviceaccount.com&Expires=1747264605&Signature=IE4kLVptVcsfzRnXxedbGWZxknwu%2BkeKqaSqwDaR5j72r0YUIV3XWb3E0bKg7Ej45Zgif23XNyYjcLSC%2Fa2h3%2FeFCW8g%2Bny14%2F1I3B%2B6MPKEGkS9ZeglLz5dG1mjQQMHRYDZrToRUOUa1GXibIXVak6em0Ved%2BPNMNC2jLHsrW72hJaEYI0jUzuVsSWJoJu%2FQVOVpPOPeLWUtPZUQellEOFWXqGsFiLMQDnzABezCPE1wSSM7ycSSaq4WfydC4vlZGleY%2BYNm90zEsFyJNpTvYzk0Bsw7RZaPPyOl57Wyxra2fYvTsbcLSw3o6%2Bw7k1I%2BaxQnoJq2QL9AvM5FWxolw%3D%3D","environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"techteno-1e8ad\",\"storageBucket\":\"techteno-1e8ad.firebasestorage.app\"}","GCLOUD_PROJECT":"techteno-1e8ad","EVENTARC_CLOUD_EVENT_SOURCE":"projects/techteno-1e8ad/locations/us-central1/functions/createPreference"},"runtime":"nodejs18","buildEnvironmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"dockerRegistry":"ARTIFACT_REGISTRY"},"versionId":"1","updateTime":"2025-05-14T22:46:48.554748136Z","buildId":"08b2ab4a-c9c4-4ca0-9ad2-ef1a3e4d4546","buildName":"projects/196223760508/locations/us-central1/builds/08b2ab4a-c9c4-4ca0-9ad2-ef1a3e4d4546"}}
+[debug] [2025-05-14T22:47:12.232Z] [create-default-us-central1-createPreference] Retrying task index 0
+[debug] [2025-05-14T22:47:12.232Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:47:12.232Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:47:12.232Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v1/operations/cHJvamVjdHMvdGVjaHRlbm8tMWU4YWQvbG9jYXRpb25zL3VzLWNlbnRyYWwxL29wZXJhdGlvbnMvb3BlcmF0aW9uLTE3NDcyNjI4MDc5ODMtNjM1MjA1MmZmYzU3Mi1iZTAzNmZmYy0yNzcxMDMzNA [none]
+[debug] [2025-05-14T22:47:12.872Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v1/operations/cHJvamVjdHMvdGVjaHRlbm8tMWU4YWQvbG9jYXRpb25zL3VzLWNlbnRyYWwxL29wZXJhdGlvbnMvb3BlcmF0aW9uLTE3NDcyNjI4MDc5ODMtNjM1MjA1MmZmYzU3Mi1iZTAzNmZmYy0yNzcxMDMzNA 200
+[debug] [2025-05-14T22:47:12.872Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v1/operations/cHJvamVjdHMvdGVjaHRlbm8tMWU4YWQvbG9jYXRpb25zL3VzLWNlbnRyYWwxL29wZXJhdGlvbnMvb3BlcmF0aW9uLTE3NDcyNjI4MDc5ODMtNjM1MjA1MmZmYzU3Mi1iZTAzNmZmYy0yNzcxMDMzNA {"name":"operations/cHJvamVjdHMvdGVjaHRlbm8tMWU4YWQvbG9jYXRpb25zL3VzLWNlbnRyYWwxL29wZXJhdGlvbnMvb3BlcmF0aW9uLTE3NDcyNjI4MDc5ODMtNjM1MjA1MmZmYzU3Mi1iZTAzNmZmYy0yNzcxMDMzNA","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v1.OperationMetadataV1","target":"projects/techteno-1e8ad/locations/us-central1/functions/createPreference","type":"CREATE_FUNCTION","request":{"@type":"type.googleapis.com/google.cloud.functions.v1.CloudFunction","name":"projects/techteno-1e8ad/locations/us-central1/functions/createPreference","httpsTrigger":{"securityLevel":"SECURE_ALWAYS"},"entryPoint":"createPreference","updateTime":"1970-01-01T00:00:00Z","labels":{"deployment-tool":"cli-firebase","firebase-functions-hash":"1d64df63a9ea716a1e5e759ed2b528a833438276"},"sourceUploadUrl":"https://storage.googleapis.com/uploads-960980867368.us-central1.cloudfunctions.appspot.com/05ea34bb-3128-4a14-a110-90656b0b03b9.zip?GoogleAccessId=service-196223760508@gcf-admin-robot.iam.gserviceaccount.com&Expires=1747264605&Signature=IE4kLVptVcsfzRnXxedbGWZxknwu%2BkeKqaSqwDaR5j72r0YUIV3XWb3E0bKg7Ej45Zgif23XNyYjcLSC%2Fa2h3%2FeFCW8g%2Bny14%2F1I3B%2B6MPKEGkS9ZeglLz5dG1mjQQMHRYDZrToRUOUa1GXibIXVak6em0Ved%2BPNMNC2jLHsrW72hJaEYI0jUzuVsSWJoJu%2FQVOVpPOPeLWUtPZUQellEOFWXqGsFiLMQDnzABezCPE1wSSM7ycSSaq4WfydC4vlZGleY%2BYNm90zEsFyJNpTvYzk0Bsw7RZaPPyOl57Wyxra2fYvTsbcLSw3o6%2Bw7k1I%2BaxQnoJq2QL9AvM5FWxolw%3D%3D","environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"techteno-1e8ad\",\"storageBucket\":\"techteno-1e8ad.firebasestorage.app\"}","GCLOUD_PROJECT":"techteno-1e8ad","EVENTARC_CLOUD_EVENT_SOURCE":"projects/techteno-1e8ad/locations/us-central1/functions/createPreference"},"runtime":"nodejs18","buildEnvironmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"dockerRegistry":"ARTIFACT_REGISTRY"},"versionId":"1","updateTime":"2025-05-14T22:46:48.554748136Z","buildId":"08b2ab4a-c9c4-4ca0-9ad2-ef1a3e4d4546","buildName":"projects/196223760508/locations/us-central1/builds/08b2ab4a-c9c4-4ca0-9ad2-ef1a3e4d4546"}}
+[debug] [2025-05-14T22:47:22.877Z] [create-default-us-central1-createPreference] Retrying task index 0
+[debug] [2025-05-14T22:47:22.877Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:47:22.877Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:47:22.877Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v1/operations/cHJvamVjdHMvdGVjaHRlbm8tMWU4YWQvbG9jYXRpb25zL3VzLWNlbnRyYWwxL29wZXJhdGlvbnMvb3BlcmF0aW9uLTE3NDcyNjI4MDc5ODMtNjM1MjA1MmZmYzU3Mi1iZTAzNmZmYy0yNzcxMDMzNA [none]
+[debug] [2025-05-14T22:47:23.565Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v1/operations/cHJvamVjdHMvdGVjaHRlbm8tMWU4YWQvbG9jYXRpb25zL3VzLWNlbnRyYWwxL29wZXJhdGlvbnMvb3BlcmF0aW9uLTE3NDcyNjI4MDc5ODMtNjM1MjA1MmZmYzU3Mi1iZTAzNmZmYy0yNzcxMDMzNA 200
+[debug] [2025-05-14T22:47:23.565Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v1/operations/cHJvamVjdHMvdGVjaHRlbm8tMWU4YWQvbG9jYXRpb25zL3VzLWNlbnRyYWwxL29wZXJhdGlvbnMvb3BlcmF0aW9uLTE3NDcyNjI4MDc5ODMtNjM1MjA1MmZmYzU3Mi1iZTAzNmZmYy0yNzcxMDMzNA {"name":"operations/cHJvamVjdHMvdGVjaHRlbm8tMWU4YWQvbG9jYXRpb25zL3VzLWNlbnRyYWwxL29wZXJhdGlvbnMvb3BlcmF0aW9uLTE3NDcyNjI4MDc5ODMtNjM1MjA1MmZmYzU3Mi1iZTAzNmZmYy0yNzcxMDMzNA","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v1.OperationMetadataV1","target":"projects/techteno-1e8ad/locations/us-central1/functions/createPreference","type":"CREATE_FUNCTION","request":{"@type":"type.googleapis.com/google.cloud.functions.v1.CloudFunction","name":"projects/techteno-1e8ad/locations/us-central1/functions/createPreference","httpsTrigger":{"securityLevel":"SECURE_ALWAYS"},"entryPoint":"createPreference","updateTime":"1970-01-01T00:00:00Z","labels":{"deployment-tool":"cli-firebase","firebase-functions-hash":"1d64df63a9ea716a1e5e759ed2b528a833438276"},"sourceUploadUrl":"https://storage.googleapis.com/uploads-960980867368.us-central1.cloudfunctions.appspot.com/05ea34bb-3128-4a14-a110-90656b0b03b9.zip?GoogleAccessId=service-196223760508@gcf-admin-robot.iam.gserviceaccount.com&Expires=1747264605&Signature=IE4kLVptVcsfzRnXxedbGWZxknwu%2BkeKqaSqwDaR5j72r0YUIV3XWb3E0bKg7Ej45Zgif23XNyYjcLSC%2Fa2h3%2FeFCW8g%2Bny14%2F1I3B%2B6MPKEGkS9ZeglLz5dG1mjQQMHRYDZrToRUOUa1GXibIXVak6em0Ved%2BPNMNC2jLHsrW72hJaEYI0jUzuVsSWJoJu%2FQVOVpPOPeLWUtPZUQellEOFWXqGsFiLMQDnzABezCPE1wSSM7ycSSaq4WfydC4vlZGleY%2BYNm90zEsFyJNpTvYzk0Bsw7RZaPPyOl57Wyxra2fYvTsbcLSw3o6%2Bw7k1I%2BaxQnoJq2QL9AvM5FWxolw%3D%3D","environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"techteno-1e8ad\",\"storageBucket\":\"techteno-1e8ad.firebasestorage.app\"}","GCLOUD_PROJECT":"techteno-1e8ad","EVENTARC_CLOUD_EVENT_SOURCE":"projects/techteno-1e8ad/locations/us-central1/functions/createPreference"},"runtime":"nodejs18","buildEnvironmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"dockerRegistry":"ARTIFACT_REGISTRY"},"versionId":"1","updateTime":"2025-05-14T22:47:21.100518865Z","buildId":"08b2ab4a-c9c4-4ca0-9ad2-ef1a3e4d4546","buildName":"projects/196223760508/locations/us-central1/builds/08b2ab4a-c9c4-4ca0-9ad2-ef1a3e4d4546"},"done":true,"error":{"code":3,"message":"Gen1 operation for function projects/techteno-1e8ad/locations/us-central1/functions/createPreference failed: Build failed: npm error code ERESOLVE\nnpm error ERESOLVE could not resolve\nnpm error\nnpm error While resolving: firebase-functions-test@3.4.1\nnpm error Found: firebase-functions@3.23.0\nnpm error node_modules/firebase-functions\nnpm error   firebase-functions@\"^3.23.0\" from the root project\nnpm error\nnpm error Could not resolve dependency:\nnpm error peer firebase-functions@\">=4.9.0\" from firebase-functions-test@3.4.1\nnpm error node_modules/firebase-functions-test\nnpm error   dev firebase-functions-test@\"^3.1.0\" from the root project\nnpm error\nnpm error Conflicting peer dependency: firebase-functions@6.3.2\nnpm error node_modules/firebase-functions\nnpm error   peer firebase-functions@\">=4.9.0\" from firebase-functions-test@3.4.1\nnpm error   node_modules/firebase-functions-test\nnpm error     dev firebase-functions-test@\"^3.1.0\" from the root project\nnpm error\nnpm error Fix the upstream dependency conflict, or retry\nnpm error this command with --force or --legacy-peer-deps\nnpm error to accept an incorrect (and potentially broken) dependency resolution.\nnpm error\nnpm error\nnpm error For a full report see:\nnpm error /www-data-home/.npm/_logs/2025-05-14T22_47_11_871Z-eresolve-report.txt\nnpm error A complete log of this run can be found in: /www-data-home/.npm/_logs/2025-05-14T22_47_11_871Z-debug-0.log; Error ID: 7fa33aaa."}}
+[debug] [2025-05-14T22:47:23.566Z] Got source token undefined for region us-central1
+[error] Gen1 operation for function projects/techteno-1e8ad/locations/us-central1/functions/createPreference failed: Build failed: npm error code ERESOLVE
+npm error ERESOLVE could not resolve
+npm error
+npm error While resolving: firebase-functions-test@3.4.1
+npm error Found: firebase-functions@3.23.0
+npm error node_modules/firebase-functions
+npm error   firebase-functions@"^3.23.0" from the root project
+npm error
+npm error Could not resolve dependency:
+npm error peer firebase-functions@">=4.9.0" from firebase-functions-test@3.4.1
+npm error node_modules/firebase-functions-test
+npm error   dev firebase-functions-test@"^3.1.0" from the root project
+npm error
+npm error Conflicting peer dependency: firebase-functions@6.3.2
+npm error node_modules/firebase-functions
+npm error   peer firebase-functions@">=4.9.0" from firebase-functions-test@3.4.1
+npm error   node_modules/firebase-functions-test
+npm error     dev firebase-functions-test@"^3.1.0" from the root project
+npm error
+npm error Fix the upstream dependency conflict, or retry
+npm error this command with --force or --legacy-peer-deps
+npm error to accept an incorrect (and potentially broken) dependency resolution.
+npm error
+npm error
+npm error For a full report see:
+npm error /www-data-home/.npm/_logs/2025-05-14T22_47_11_871Z-eresolve-report.txt
+npm error A complete log of this run can be found in: /www-data-home/.npm/_logs/2025-05-14T22_47_11_871Z-debug-0.log; Error ID: 7fa33aaa.
+[debug] [2025-05-14T22:47:23.571Z] Total Function Deployment time: 34873
+[debug] [2025-05-14T22:47:23.571Z] 1 Functions Deployed
+[debug] [2025-05-14T22:47:23.571Z] 1 Functions Errored
+[debug] [2025-05-14T22:47:23.571Z] 0 Function Deployments Aborted
+[debug] [2025-05-14T22:47:23.571Z] Average Function Deployment time: 34872
+[info] 
+[info] Functions deploy had errors with the following functions:
+	createPreference(us-central1)
+[debug] [2025-05-14T22:47:37.021Z] Not printing URL for HTTPS function. Typically this means it didn't match a filter or we failed deployment
+[debug] [2025-05-14T22:47:37.022Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:47:37.022Z] Checked if tokens are valid: true, expires at: 1747265295754
+[debug] [2025-05-14T22:47:37.022Z] >>> [apiv2][query] GET https://artifactregistry.googleapis.com/v1/projects/techteno-1e8ad/locations/us-central1/repositories/gcf-artifacts [none]
+[debug] [2025-05-14T22:47:38.171Z] <<< [apiv2][status] GET https://artifactregistry.googleapis.com/v1/projects/techteno-1e8ad/locations/us-central1/repositories/gcf-artifacts 200
+[debug] [2025-05-14T22:47:38.171Z] <<< [apiv2][body] GET https://artifactregistry.googleapis.com/v1/projects/techteno-1e8ad/locations/us-central1/repositories/gcf-artifacts {"name":"projects/techteno-1e8ad/locations/us-central1/repositories/gcf-artifacts","format":"DOCKER","description":"This repository is created and used by Cloud Functions for storing function docker images.","labels":{"goog-managed-by":"cloudfunctions"},"createTime":"2025-05-14T21:45:28.901557Z","updateTime":"2025-05-14T22:35:40.127467Z","mode":"STANDARD_REPOSITORY","cleanupPolicies":{"firebase-functions-cleanup":{"id":"firebase-functions-cleanup","action":"DELETE","condition":{"tagState":"ANY","olderThan":"86400s"}}},"sizeBytes":"154448279","vulnerabilityScanningConfig":{"lastEnableTime":"2025-05-14T21:45:20.373228160Z","enablementState":"SCANNING_DISABLED","enablementStateReason":"API containerscanning.googleapis.com is not enabled."},"satisfiesPzi":true,"registryUri":"us-central1-docker.pkg.dev/techteno-1e8ad/gcf-artifacts"}
+[debug] [2025-05-14T22:47:38.171Z] Functions deploy failed.
+[debug] [2025-05-14T22:47:38.171Z] {
+  "endpoint": {
+    "id": "createPreference",
+    "project": "techteno-1e8ad",
+    "region": "us-central1",
+    "entryPoint": "createPreference",
+    "platform": "gcfv1",
+    "runtime": "nodejs18",
+    "httpsTrigger": {},
+    "environmentVariables": {
+      "FIREBASE_CONFIG": "{\"projectId\":\"techteno-1e8ad\",\"storageBucket\":\"techteno-1e8ad.firebasestorage.app\"}",
+      "GCLOUD_PROJECT": "techteno-1e8ad",
+      "EVENTARC_CLOUD_EVENT_SOURCE": "projects/techteno-1e8ad/locations/us-central1/functions/createPreference"
+    },
+    "codebase": "default",
+    "targetedByOnly": false,
+    "hash": "1d64df63a9ea716a1e5e759ed2b528a833438276",
+    "labels": {
+      "deployment-tool": "cli-firebase"
+    }
+  },
+  "op": "create",
+  "original": {
+    "name": "FirebaseError",
+    "children": [],
+    "exit": 1,
+    "message": "Gen1 operation for function projects/techteno-1e8ad/locations/us-central1/functions/createPreference failed: Build failed: npm error code ERESOLVE\nnpm error ERESOLVE could not resolve\nnpm error\nnpm error While resolving: firebase-functions-test@3.4.1\nnpm error Found: firebase-functions@3.23.0\nnpm error node_modules/firebase-functions\nnpm error   firebase-functions@\"^3.23.0\" from the root project\nnpm error\nnpm error Could not resolve dependency:\nnpm error peer firebase-functions@\">=4.9.0\" from firebase-functions-test@3.4.1\nnpm error node_modules/firebase-functions-test\nnpm error   dev firebase-functions-test@\"^3.1.0\" from the root project\nnpm error\nnpm error Conflicting peer dependency: firebase-functions@6.3.2\nnpm error node_modules/firebase-functions\nnpm error   peer firebase-functions@\">=4.9.0\" from firebase-functions-test@3.4.1\nnpm error   node_modules/firebase-functions-test\nnpm error     dev firebase-functions-test@\"^3.1.0\" from the root project\nnpm error\nnpm error Fix the upstream dependency conflict, or retry\nnpm error this command with --force or --legacy-peer-deps\nnpm error to accept an incorrect (and potentially broken) dependency resolution.\nnpm error\nnpm error\nnpm error For a full report see:\nnpm error /www-data-home/.npm/_logs/2025-05-14T22_47_11_871Z-eresolve-report.txt\nnpm error A complete log of this run can be found in: /www-data-home/.npm/_logs/2025-05-14T22_47_11_871Z-debug-0.log; Error ID: 7fa33aaa.",
+    "original": {
+      "code": 3,
+      "message": "Gen1 operation for function projects/techteno-1e8ad/locations/us-central1/functions/createPreference failed: Build failed: npm error code ERESOLVE\nnpm error ERESOLVE could not resolve\nnpm error\nnpm error While resolving: firebase-functions-test@3.4.1\nnpm error Found: firebase-functions@3.23.0\nnpm error node_modules/firebase-functions\nnpm error   firebase-functions@\"^3.23.0\" from the root project\nnpm error\nnpm error Could not resolve dependency:\nnpm error peer firebase-functions@\">=4.9.0\" from firebase-functions-test@3.4.1\nnpm error node_modules/firebase-functions-test\nnpm error   dev firebase-functions-test@\"^3.1.0\" from the root project\nnpm error\nnpm error Conflicting peer dependency: firebase-functions@6.3.2\nnpm error node_modules/firebase-functions\nnpm error   peer firebase-functions@\">=4.9.0\" from firebase-functions-test@3.4.1\nnpm error   node_modules/firebase-functions-test\nnpm error     dev firebase-functions-test@\"^3.1.0\" from the root project\nnpm error\nnpm error Fix the upstream dependency conflict, or retry\nnpm error this command with --force or --legacy-peer-deps\nnpm error to accept an incorrect (and potentially broken) dependency resolution.\nnpm error\nnpm error\nnpm error For a full report see:\nnpm error /www-data-home/.npm/_logs/2025-05-14T22_47_11_871Z-eresolve-report.txt\nnpm error A complete log of this run can be found in: /www-data-home/.npm/_logs/2025-05-14T22_47_11_871Z-debug-0.log; Error ID: 7fa33aaa."
+    },
+    "status": 3,
+    "code": 3
+  }
+}
+[debug] [2025-05-14T22:47:38.237Z] Error: Failed to create function createPreference in region us-central1
+    at C:\Users\Usuario\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:52:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Fabricator.createV1Function (C:\Users\Usuario\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:182:32)
+    at async Fabricator.createEndpoint (C:\Users\Usuario\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:134:13)
+    at async handle (C:\Users\Usuario\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:89:17)
+[error] 
+[error] Error: There was an error deploying functions
